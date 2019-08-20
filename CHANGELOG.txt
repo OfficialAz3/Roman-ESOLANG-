@@ -1,0 +1,13 @@
+1.0.0:
+- Created the language
+
+1.0.1:
+- Bug Fixed
+
+1.0.2:
+- Changed the name from "Roman1" to "Roman".
+  Causing the code raising a File Errno.
+- Changed the prefix.
+
+Soon(1.1.0):
+- Adding 'CD' and 'BACK' keywords for the Terminal.
