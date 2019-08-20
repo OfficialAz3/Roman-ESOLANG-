@@ -1,14 +1,16 @@
 try:
-    from   source.Roman import main
+    from source.Roman import main
 except:
     print("RUN ON MAIN.PY")
     quit()
 import sys
 
 allow_prefix = bool(open(sys.argv[0][:len(sys.argv[0])-12]+"DATA", "r").read())
-prefix = sys.prefix.split("/")
-if __name__ == '__main__':
-    prefix = ["storage","sdcard0","qpython","scripts3","Roman1","examples"]
+prefix = sys.argv[0][:len(sys.argv[0])-12].split("/")
+prefix = prefix[:len(prefix)-1]
+print(prefix)
+if True:
+    prefix = ["storage","sdcard0","qpython","scripts3","Roman","examples"]
 
 
 if allow_prefix == True:
@@ -31,14 +33,12 @@ if True:
     print("""
     WELCOME TO THE ROMAN1!
     AUTHOR BY OFFICIALAZ3
-    VERSION IS 1.0.0
+    VERSION IS 1.0.2
     
     TYPE "ECHO OFF" TO TURN OFF THE ECHO
     TYPE "ECHO ON"  TO TURN ON  THE ECHO
     DEFAULT IS {}
     
-    TYPE "CD <FOLDER>" TO GO TO THE GIVEN FOLDER
-    TYPE "BACK" TO GO BACK
     TYPE "EXIT" TO EXIT
     
     TYPE "OPEN <SPACE> <ANY FILE>" TO COMPILE
