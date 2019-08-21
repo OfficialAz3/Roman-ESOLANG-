@@ -8,7 +8,7 @@ import sys
 allow_prefix = bool(open(sys.argv[0][:len(sys.argv[0])-12]+"DATA", "r").read())
 prefix = sys.argv[0][:len(sys.argv[0])-12].split("/")
 prefix = prefix[:len(prefix)-1]
-print(prefix)
+
 if True:
     prefix = ["storage","sdcard0","qpython","scripts3","Roman","examples"]
 
