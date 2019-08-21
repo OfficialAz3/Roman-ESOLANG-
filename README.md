@@ -4,19 +4,19 @@ REMEMBER THE ROMAN NUMERALS? IF SO, GO TO THE INSTRUCTIONS.
 
 IF YOU DON'T KNOW, HERE IS THE TIP:
 
-    1.)I : 1
-    2.)V : 5
-    3.)X : 10
-    4.)L : 50
-    5.)C : 100
-    6.)D : 500
-    7.)M : 1000
-    8.)IV : 4
-    9.)IX : 9
-    10.)XL : 40
-    11.)XC : 90
-    12.)CD : 400
-    13.)CM : 900
+    - I : 1
+    - V : 5
+    - X : 10
+    - L : 50
+    - C : 100
+    - D : 500
+    - M : 1000
+    - IV : 4
+    - IX : 9
+    - XL : 40
+    - XC : 90
+    - CD : 400
+    - CM : 900
 
 TAKE THE NUMBER IN EXPANDED FORM AND REPLACE IT WITH ROMAN NUMERALS
 
