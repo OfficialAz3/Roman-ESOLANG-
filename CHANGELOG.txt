@@ -9,5 +9,8 @@
   Causing the code raising a File Errno.
 - Changed the prefix.
 
+1.0.3:
+- Removed the "print (prefix)" line in Terminal.py
+
 Soon(1.1.0):
 - Adding 'CD' and 'BACK' keywords for the Terminal.
