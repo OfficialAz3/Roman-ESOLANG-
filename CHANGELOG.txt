@@ -1,16 +1,22 @@
-1.0.0:
-- Created the language
+VERSION 1.0.0:
+    MAIN:
+        - CREATED THIS LANGUAGE
 
-1.0.1:
-- Bug Fixed
+    1.0.1:
+        - BUG FIXED
 
-1.0.2:
-- Changed the name from "Roman1" to "Roman".
-  Causing the code raising a File Errno.
-- Changed the prefix.
+    1.0.2:
+        - RENAMED THE FILE "ROMAN1" INTO "ROMAN".
+          CAUSING THE CODE TO RAISE AN ERROR ABOUT FILES.
+        - FIXED THE PREFIX
 
-1.0.3:
-- Removed the "print (prefix)" line in Terminal.py
+    1.0.3:
+        - REMOVED THE PRINT(PREFIX) IN TERMINAL.PY
 
-Soon(1.1.0):
-- Adding 'CD' and 'BACK' keywords for the Terminal.
+#########################################################
+
+VERSION 1.1.0:
+    MAIN:
+        - ADDED 'CD' AND 'BACK' COMMANDS
+        - FIXED THE BUG ABOUT BYPASSING
+          NUMBERS OVER ROMAN NUMERALS.
