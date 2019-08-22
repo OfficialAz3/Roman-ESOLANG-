@@ -3,14 +3,11 @@ try:
 except:
     print("RUN ON MAIN.PY")
     quit()
-import sys
+import sys, os
 
 allow_prefix = bool(open(sys.argv[0][:len(sys.argv[0])-12]+"DATA", "r").read())
 prefix = sys.argv[0][:len(sys.argv[0])-12].split("/")
 prefix = prefix[:len(prefix)-1]
-
-if True:
-    prefix = ["storage","sdcard0","qpython","scripts3","Roman","examples"]
 
 
 if allow_prefix == True:
@@ -24,6 +21,18 @@ def modcmd(x):
     try:
         if x[0] == 'OPEN':
             main("".join(echofold) + x[1])
+        elif x[0] == 'CD':
+            prefix.append(x[1])
+            echofolder = ""
+            for folder in prefix:
+                echofolder += folder + '/'
+            if os.path.isdir(echofolder):
+                pass
+            else:
+                print("FILE TERMINAL ERROR;\nNO DIRECTORY NAMED '{}' EXISTS.".format(echofolder))
+                prefix.remove(prefix[len(prefix)-1])
+        elif x[0] == 'BACK':
+            prefix.remove(prefix[len(prefix)-1])
         else:
             return
     except:
@@ -33,11 +42,14 @@ if True:
     print("""
     WELCOME TO THE ROMAN1!
     AUTHOR BY OFFICIALAZ3
-    VERSION IS 1.0.2
+    VERSION IS 1.1.0
     
     TYPE "ECHO OFF" TO TURN OFF THE ECHO
     TYPE "ECHO ON"  TO TURN ON  THE ECHO
     DEFAULT IS {}
+    
+    TYPE "CD <FOLDERNAME>" TO OPEN A DIRECTORY
+    TYPE "BACK" TO GO BACK
     
     TYPE "EXIT" TO EXIT
     
