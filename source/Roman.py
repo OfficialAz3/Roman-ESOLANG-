@@ -1,6 +1,21 @@
 import sys
     
 def hindu(x):
+    intsam = 0
+    for num in x.split(':'):
+        try:
+            num = int(num)
+            intsam += 1
+        except:
+            for num n num:
+                try:
+                    num = int(num)
+                    intsam =+ 1
+                except:
+                    pass
+            pass
+        if intsam != 0:
+            raise SyntaxError
     x = x.replace("IV", ":4").replace("IX", ":9").replace("XL", ":40").replace("XC", ":90").replace("CD", ":400").replace("CM", ":900").replace("I", ":1").replace("V", ":5").replace("X", ":10").replace("L", ":50").replace("C", ":100").replace("D", ":500").replace("M", ":1000").split(':')
     x.remove("")
     sum1 = 0
